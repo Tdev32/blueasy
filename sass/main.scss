@@ -1,0 +1,21 @@
+//// PARTIALS ////
+
+
+// - ABSTRACTS
+@import "abstracts/image-sprite";
+@import "abstracts/media-queries";
+
+// - BASE
+@import "base/resets";
+
+// - FORMS
+@import "forms/form";
+
+// - LAYOUT
+@import "layout/header";
+@import "layout/default";
+@import "layout/services";
+@import "layout/portfolio";
+@import "layout/john-doe";
+@import "layout/footer";
+@import "layout/testimonials";

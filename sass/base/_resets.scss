@@ -1,0 +1,108 @@
+/* Universal styles */
+* {
+  color: rgb(255, 255, 255);
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+--grey: 53, 63, 70;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+
+/* Positional containers */
+.wrapper {
+  height: 100%;
+  margin: auto 146px;
+}
+
+.flexbox-1 {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-footer {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/* Color containers */
+.cc-grey {
+  background-color: rgba(var(--grey), 0.85);
+}
+
+.cc-blue {
+  background-color: #4bcaff;
+}
+
+.darkgrey {
+  background-color: #353F47;
+}
+
+.letter {
+  color: #4bcaff;
+}
+
+/* Background images */
+.contact-bg, .jd-bg {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Links */
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:link { color: #FFF }
+a:hover { color: #4bcaff }
+
+ul {
+  align-items: center;
+  display: flex;
+  list-style: none;
+}
+
+
+/* Padding */
+#services, #portfolio, #default, #twitter,
+#john-doe, #testimonials, #contact {
+  padding: 50px 0px;
+}
+
+
+
+/* Form */
+#name, #mail, textarea {
+  background-color: transparent;
+  border: 2px solid #FFF;
+  box-sizing: border-box;
+  width: 100%;
+}

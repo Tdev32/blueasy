@@ -1,0 +1,28 @@
+/* Services section */
+.service {
+  margin-right: 15px;
+}
+
+.service img {
+  margin-bottom: 15px;
+}
+
+#services {
+  height: 20rem;
+}
+
+
+#services h3 {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+#services p {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+#services img {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}

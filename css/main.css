@@ -1,0 +1,441 @@
+/* Image sprite */
+.twitter {
+  -o-object-fit: none;
+     object-fit: none;
+  -o-object-position: -325px -15px;
+     object-position: -325px -15px;
+  border: 2px solid white;
+  height: 50px;
+  width: 50px;
+  padding: 6px;
+  margin-right: 10px;
+}
+
+.google {
+  -o-object-fit: none;
+     object-fit: none;
+  -o-object-position: -385px -15px;
+     object-position: -385px -15px;
+  border: 2px solid white;
+  height: 50px;
+  width: 50px;
+  padding: 6px;
+  margin-right: 10px;
+}
+
+.dribbble {
+  -o-object-fit: none;
+     object-fit: none;
+  -o-object-position: -437px -15px;
+     object-position: -437px -15px;
+  border: 2px solid white;
+  height: 50px;
+  width: 50px;
+  padding: 6px;
+  margin-right: 10px;
+}
+
+.cup {
+  -o-object-fit: none;
+     object-fit: none;
+  -o-object-position: 0px -84px;
+     object-position: 0px -84px;
+  border: 2px solid white;
+  height: 50px;
+  width: 50px;
+  padding: 6px;
+  margin-right: 5px;
+}
+
+/*
+ * Media queries for responsiveness
+ *
+ */
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  #logo {
+    margin-top: 10px;
+  }
+  nav {
+    margin-bottom: 30px;
+  }
+  .flexbox-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  h1 {
+    font-size: 1.9rem;
+  }
+  .wrapper {
+    margin: auto 50px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Universal styles */
+* {
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --grey: 53, 63, 70;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/* Positional containers */
+.wrapper {
+  height: 100%;
+  margin: auto 146px;
+}
+
+.flexbox-1 {
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-footer {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* Color containers */
+.cc-grey {
+  background-color: rgba(var(--grey), 0.85);
+}
+
+.cc-blue {
+  background-color: #4bcaff;
+}
+
+.darkgrey {
+  background-color: #353F47;
+}
+
+.letter {
+  color: #4bcaff;
+}
+
+/* Background images */
+.contact-bg, .jd-bg {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Links */
+a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:link {
+  color: #FFF;
+}
+
+a:hover {
+  color: #4bcaff;
+}
+
+ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+/* Padding */
+#services, #portfolio, #default, #twitter,
+#john-doe, #testimonials, #contact {
+  padding: 50px 0px;
+}
+
+/* Form */
+#name, #mail, textarea {
+  background-color: transparent;
+  border: 2px solid #FFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+
+/* Form */
+form {
+  text-transform: uppercase;
+}
+
+.form-1 {
+  width: 100%;
+}
+
+.form-1 input {
+  margin: 6px 0px;
+}
+
+#name, #mail {
+  height: 60px;
+}
+
+#nameErr, #emailErr, #msgErr {
+  margin-left: 10px;
+  color: red;
+}
+
+textarea {
+  margin-top: 6px;
+  height: 300px;
+}
+
+.text {
+  margin: 0px 0px 0px 50px;
+}
+
+.text p {
+  margin-bottom: 10px;
+  line-height: 24px;
+}
+
+.button-1, #btn {
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: black;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 30px;
+  width: 30%;
+  height: 50px;
+}
+
+/* Main feature */
+#banner {
+  background-attachment: fixed;
+  background-size: cover;
+  display: -ms-grid;
+  display: grid;
+  height: 90vh;
+}
+
+h1 span {
+  padding: 0 5px;
+}
+
+/* Top section */
+#top {
+  background-color: rgba(var(--grey), 0.85);
+  height: 17vh;
+}
+
+h1 {
+  font-size: 3.125rem;
+  font-weight: lighter;
+  text-align: center;
+}
+
+#logo {
+  opacity: 0;
+  font-size: 30px;
+  -webkit-animation-name: show;
+          animation-name: show;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#top a {
+  padding: 0px 0px 0px 30px;
+}
+
+nav {
+  bottom: 200px;
+  position: relative;
+  -webkit-animation-name: motion;
+          animation-name: motion;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes motion {
+  0% {
+    bottom: 200px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+@keyframes motion {
+  0% {
+    bottom: 200px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+/* Default section */
+#default p {
+  line-height: 22px;
+  margin-right: 75px;
+  font-size: 14px;
+}
+
+/* Services section */
+.service {
+  margin-right: 15px;
+}
+
+.service img {
+  margin-bottom: 15px;
+}
+
+#services {
+  height: 20rem;
+}
+
+#services h3 {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+#services p {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+#services img {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+/* Portfolio section */
+#portfolio h2 {
+  color: rgba(var(--grey), 0.85);
+  margin-bottom: 0px;
+}
+
+#portfolio a {
+  padding: 0px 0px 0px 30px;
+  color: rgba(var(--grey), 0.85);
+}
+
+.gallery {
+  margin: 30px 0px;
+  text-align: center;
+}
+
+.gallery img {
+  padding: 10px;
+}
+
+/* John Doe */
+.jd-bg {
+  height: 50vh;
+}
+
+#john-doe p {
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.box-1 {
+  margin-right: 20px;
+}
+
+/* Footer */
+footer {
+  height: 150px;
+}
+
+footer a {
+  padding: 0px 30px 0px 0px;
+}
+
+/* Testimonials section */
+#testimonials h2 {
+  color: rgba(var(--grey), 0.85);
+}
+
+#testimonials p {
+  color: rgba(var(--grey), 0.85);
+}
+/*# sourceMappingURL=main.css.map */

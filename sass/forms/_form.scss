@@ -1,0 +1,46 @@
+/* Form */
+form {
+  text-transform: uppercase;
+}
+
+.form-1 {
+  width: 100%;
+}
+
+.form-1 input {
+  margin: 6px 0px;
+}
+
+#name, #mail {
+  height: 60px;
+}
+
+#nameErr, #emailErr, #msgErr {
+  margin-left: 10px;
+  color: red;
+}
+
+textarea {
+  margin-top: 6px;
+  height: 300px;
+}
+
+.text {
+  margin: 0px 0px 0px 50px;
+}
+
+.text p {
+  margin-bottom: 10px;
+  line-height: 24px;
+}
+
+.button-1, #btn {
+  border: none;
+  box-sizing: border-box;
+  background-color: black;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  margin-top: 30px;
+  width: 30%;
+  height: 50px;
+}

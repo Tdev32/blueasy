@@ -1,0 +1,55 @@
+/* Main feature */
+#banner {
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  height: 90vh;
+}
+
+h1 span {
+  padding: 0 5px;
+}    
+
+/* Top section */
+#top {
+  background-color: rgba(var(--grey), 0.85);
+  height: 17vh;
+}
+
+h1 {
+  font-size: 3.125rem;
+  font-weight: lighter;
+  text-align: center;
+}
+
+#logo {
+  opacity: 0;
+  font-size: 30px;
+  animation-name: show;
+  animation-delay: 0.5s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+#top a {
+  padding: 0px 0px 0px 30px;
+}
+
+nav {
+  bottom: 200px;
+  position: relative;
+  animation-name: motion;
+  animation-delay: 0.2s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes motion {
+  0% {bottom: 200px;}
+  100% {bottom: 0px;}
+}
