@@ -1,7 +1,56 @@
 /* Default section */
 
-#default p {
-  line-height: 22px;
-  margin-right: 75px;
-  font-size: 14px;
+#default {
+
+  p {
+    line-height: 22px;
+    margin-right: 75px;
+    font-size: 14px;
+
+    @include respond(desktop-lg) {
+      margin-right: 0;
+      text-align: center;
+    }
+
+    @include respond(desktop) {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+
+  .flexbox {
+    display: flex;
+  
+    @include respond(desktop) {
+      flex-direction: column;
+    }
+  
+    .box-1 {
+  
+      h2 {
+        margin-bottom: 1rem;
+  
+        @include respond(desktop-lg) {
+          text-align: center;
+        }
+      }
+  
+      .btn-wrapper {
+        text-align: center;
+      }
+    }
+  
+    .box-2 {
+  
+      @include respond(desktop) {
+        margin: 2rem auto 0 auto;
+      }
+  
+      @include respond(phone-sm) {
+        display: none;
+      }
+    }
+  }
 }
+

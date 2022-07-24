@@ -1,25 +1,59 @@
 /* Main feature */
-#banner {
+header {
+  background-image: url(../../images/wheat.jpg);
   background-attachment: fixed;
   background-size: cover;
   display: grid;
   height: 90vh;
 }
 
-h1 span {
-  padding: 0 5px;
-}    
+.navbar {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-/* Top section */
+  @include respond(tab-landscape) {
+    flex-direction: column;
+  }
+}
+
+// - Top section //
 #top {
   background-color: rgba(var(--grey), 0.85);
   height: 17vh;
+
+  a {
+    padding: 0px 0px 0px 30px;
+  
+    @include respond(phone-sm) {
+      padding-left: 10px;
+      height: 0rem;
+      font-size: 10px;
+    }
+  }
 }
 
 h1 {
   font-size: 3.125rem;
   font-weight: lighter;
   text-align: center;
+
+  span {
+    padding: 0 5px;
+  }
+
+  @include respond(desktop) {
+    font-size: 2.5rem;
+  }
+
+  @include respond(tab-landscape) {
+    font-size: 2rem;
+  }
+
+  @include respond(phone-sm) {
+    font-size: 1.6rem;
+  }
 }
 
 #logo {
@@ -29,6 +63,14 @@ h1 {
   animation-delay: 0.5s;
   animation-duration: 2s;
   animation-fill-mode: forwards;
+
+  @include respond(tab-landscape) {
+    margin-top: 16px;
+  }
+
+  @include respond(phone-sm) {
+    margin-top: 1.2rem;
+  }
 }
 
 @keyframes show {
@@ -36,17 +78,25 @@ h1 {
   100% {opacity: 1;}
 }
 
-#top a {
-  padding: 0px 0px 0px 30px;
-}
+
 
 nav {
-  bottom: 200px;
+  bottom: 100px;
   position: relative;
   animation-name: motion;
   animation-delay: 0.2s;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+
+  @include respond(tab-landscape) {
+    margin-top: 12px;
+    font-size: 0.8rem;
+  }
+
+  @include respond(phone-sm) {
+    margin-bottom: 2rem;;
+    font-size: 0.8rem;
+  }
 }
 
 @keyframes motion {

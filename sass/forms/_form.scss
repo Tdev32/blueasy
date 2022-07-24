@@ -4,7 +4,12 @@ form {
 }
 
 .form-1 {
-  width: 100%;
+  width: 50%;
+  display: inline-block;
+
+  @include respond(phone-sm) {
+    width: 100%;
+  }
 }
 
 .form-1 input {
@@ -26,7 +31,13 @@ textarea {
 }
 
 .text {
+  display: inline-block;
   margin: 0px 0px 0px 50px;
+  width: 40%;
+
+  @include respond(tab-landscape) {
+    display: none;
+  }
 }
 
 .text p {
@@ -41,6 +52,11 @@ textarea {
   text-transform: uppercase;
   color: rgb(255, 255, 255);
   margin-top: 30px;
-  width: 30%;
+  width: 15rem; // 30%
   height: 50px;
+
+  @include respond(desktop) {
+    margin: inherit auto;
+    display: inline-block;
+  }
 }

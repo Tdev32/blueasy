@@ -1,55 +1,31 @@
-/* Universal styles */
+/// - RESETS ///
+
+:root {
+  --grey: 53, 63, 70;
+  }
+
+
 * {
   color: rgb(255, 255, 255);
   margin: 0px;
   padding: 0px;
 }
 
-:root {
---grey: 53, 63, 70;
-}
-
 h2 {
   font-size: 30px;
-  margin-bottom: 30px;
   text-transform: uppercase;
 }
 
 
-/* Positional containers */
-.wrapper {
+// - Container (position) //
+.container {
   height: 100%;
-  margin: auto 146px;
-}
-
-.flexbox-1 {
-  position: relative;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.flexbox {
-  display: flex;
-  justify-content: space-between;
-}
-
-.flex-2 {
-  display: flex;
-  justify-content: center;
-}
-
-.flex-footer {
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin: 0 auto;
+  width: 85%;
 }
 
 
-
-/* Color containers */
+// - Color containers //
 .cc-grey {
   background-color: rgba(var(--grey), 0.85);
 }
@@ -66,7 +42,7 @@ h2 {
   color: #4bcaff;
 }
 
-/* Background images */
+// - Background images //
 .contact-bg, .jd-bg {
   background-attachment: fixed;
   background-size: cover;
@@ -74,7 +50,7 @@ h2 {
   background-position: center;
 }
 
-/* Links */
+// - Links //
 a {
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -85,21 +61,19 @@ a:link { color: #FFF }
 a:hover { color: #4bcaff }
 
 ul {
-  align-items: center;
-  display: flex;
   list-style: none;
 }
 
 
-/* Padding */
-#services, #portfolio, #default, #twitter,
+// - Padding //
+.services, #portfolio, #default, #twitter,
 #john-doe, #testimonials, #contact {
   padding: 50px 0px;
 }
 
 
 
-/* Form */
+// - Form //
 #name, #mail, textarea {
   background-color: transparent;
   border: 2px solid #FFF;

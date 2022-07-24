@@ -1,26 +1,46 @@
-/*
- * Media queries for responsiveness
- *
- */
+//
+//// MEDIA QUERY MANAGER ////
+//
+
+// KEY: Ems for responsivenss, 1em == 16px
+
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 640px) {}
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone-xsm {
+    @media only screen and (max-width: 34.375em) { @content; } // 550px
+  }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 640px) {}
+  @if $breakpoint == phone-sm {
+    @media only screen and (max-width: 42.5em) { @content; } // 680px
+  }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-  #logo {margin-top: 10px;}
-  nav {margin-bottom: 30px;}
-  .flexbox-1 {flex-direction: column;}
+  // Small devices
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 46.875em) { @content; } // 750px
+  }
+
+  // Medium devices (landscape tablets, 768px and up)
+  @if $breakpoint == tab-landscape {
+    @media only screen and (max-width: 48em) { @content; } // 768px
+  }
+
+  // Medium devices (landscape tablets, 900px and up)
+  @if $breakpoint == tab {
+    @media only screen and (max-width: 56.25em) { @content; } // 900px
+  }
+
+  // Large devices (laptops/desktops, 1050px and up)
+  @if $breakpoint == desktop {
+    @media only screen and (max-width: 65.625em) { @content; } // 1050px
+  }
+
+  // Special case MQ for the image gallery
+  @if $breakpoint == desktop-md {
+    @media only screen and (max-width: 70.0625em) { @content; } // 1121px
+  }
+
+  @if $breakpoint == desktop-lg {
+    @media only screen and (max-width: 75em) { @content; }  // 1200px
+  }
 }
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
-  h1 { font-size: 1.9rem; }
-  .wrapper {margin: auto 50px;}
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}

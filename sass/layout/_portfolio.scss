@@ -1,19 +1,69 @@
-/* Portfolio section */
-#portfolio h2 {
-  color: rgba(var(--grey), 0.85);
-  margin-bottom: 0px;
-}
+/// PORTFOLIO ///
 
-#portfolio a {
-  padding: 0px 0px 0px 30px;
-  color: rgba(var(--grey), 0.85);
+#portfolio {
+
+  .portfolio-list {
+    width: 26rem;
+    display: flex;
+    justify-content: space-between;
+  
+    @include respond(tab-landscape) {
+      width: 26rem;
+      margin: 0 auto;
+    }
+
+    @include respond(phone-sm) {
+      font-size: 12px;
+      width: 20rem;
+      margin: 0 auto;
+    }
+  }
+
+  h2 {
+    color: rgba(var(--grey), 0.85);
+    margin-bottom: 0px;
+    text-align: center;
+
+    @include respond(tab-landscape) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  a {
+    color: rgba(var(--grey), 0.85);
+
+    @include respond(tab-landscape) {
+      padding-left: 0;
+    }
+  }
 }
 
 .gallery {
   margin: 30px 0px;
   text-align: center;
+
+  @include respond(desktop-md) {
+    margin: inherit 0px;
+    width: 100%;
+  }
+
+  img {
+    width: 22%; // 254px
+    height: auto;
+    padding: 10px;
+
+    @include respond(phone-sm) {
+      width: 49%;
+      padding: 0;
+    }
+  }
 }
 
-.gallery img {
-  padding: 10px;
+.portfolio__nav {
+  display: flex;
+  justify-content: space-between;
+  
+  @include respond(tab-landscape) {
+    flex-direction: column;
+  }
 }
